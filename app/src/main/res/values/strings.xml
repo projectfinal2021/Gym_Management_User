@@ -28,13 +28,17 @@
     <string name="time">Time</string>
     <string name="body_types">Body Types</string>
     <string name="exercise_name">Exercise Name</string>
+    <string name="exercise_details">Exercise Details</string>
+    <string name="exercise_video_lint">Exercise Video Link</string>
     <string name="set">Set</string>
+    <string name="day">Day</string>
+    <string name="image">Image</string>
     <string name="reps">Reps</string>
     <string name="more_option_coming_soon">*More option coming soon</string>
     <string name="openNavDrawer">Navigation Drawer Open</string>
     <string name="closeNavDrawer">Navigation Drawer Close</string>
     <string-array name="gender_types">
-        <item>Select one</item>
+        <item>Gender</item>
         <item>Male</item>
         <item>Female</item>
         <item>Custom</item>

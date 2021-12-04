@@ -3,6 +3,16 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Client Project/New folder/GymManagementUser/app/src/main/res/drawable/button_background.xml" value="0.125" />
+        <entry key="..\:/Client Project/New folder/GymManagementUser/app/src/main/res/drawable/edittext_background.xml" value="0.125" />
+        <entry key="..\:/Client Project/New folder/GymManagementUser/app/src/main/res/layout/activity_bmicalculate.xml" value="0.2640625" />
+        <entry key="..\:/Client Project/New folder/GymManagementUser/app/src/main/res/layout/activity_exercise_details.xml" value="0.25" />
+        <entry key="..\:/Client Project/New folder/GymManagementUser/app/src/main/res/layout/activity_home.xml" value="0.2640625" />
+        <entry key="..\:/Client Project/New folder/GymManagementUser/app/src/main/res/layout/activity_register.xml" value="0.10885416666666667" />
+        <entry key="..\:/Client Project/New folder/GymManagementUser/app/src/main/res/layout/activity_splash.xml" value="0.209375" />
+        <entry key="..\:/Client Project/New folder/GymManagementUser/app/src/main/res/layout/fragment_routine.xml" value="0.209375" />
+        <entry key="..\:/Client Project/New folder/GymManagementUser/app/src/main/res/layout/layout_diet_chart.xml" value="0.2640625" />
+        <entry key="..\:/Client Project/New folder/GymManagementUser/app/src/main/res/layout/layout_exercise.xml" value="0.2640625" />
         <entry key="..\:/Study/GymManagementUser/app/src/main/res/drawable-v24/button_background.xml" value="0.24114583333333334" />
         <entry key="..\:/Study/GymManagementUser/app/src/main/res/drawable-v24/edittext_background.xml" value="0.24114583333333334" />
         <entry key="..\:/Study/GymManagementUser/app/src/main/res/drawable-v24/ic_back.xml" value="0.23541666666666666" />

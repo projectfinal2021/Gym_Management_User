@@ -11,6 +11,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.GymManagementUser">
         <activity
+            android:name=".ui.ExerciseDetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.ExerciseRoutineActivity"
+            android:exported="false" />
+        <activity
             android:name=".ui.BMICalculateActivity"
             android:exported="true" />
         <activity

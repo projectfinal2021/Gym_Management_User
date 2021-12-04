@@ -165,29 +165,19 @@ public class VerifyActivity extends AppCompatActivity {
         Dialog.show();
 
 
-        ref.addListenerForSingleValueEvent(new ValueEventListener() {
+        ref.child(phone_no).addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
 
+                if (dataSnapshot.exists()) {
+                    Dialog.dismiss();
+                    Log.d(TAG, "Already Exist.");
+                    Tools.savePrefBoolean(KEYS.IS_LOGGED_IN, true);
+                    startActivity(new Intent(VerifyActivity.this, BMICalculateActivity.class));
 
-                for (DataSnapshot dataSnapshot1 : dataSnapshot.getChildren()) {
-
-                    if (dataSnapshot1.getKey().equals(phone_no)) {
-                        Dialog.dismiss();
-                        Log.d(TAG, "Already Exist.");
-                        Tools.savePrefBoolean(KEYS.IS_LOGGED_IN, true);
-                        startActivity(new Intent(VerifyActivity.this, BMICalculateActivity.class));
-                    } else {
-                        Dialog.dismiss();
-                        Log.d(TAG, "Not Exist. ");
-                        Tools.savePrefBoolean(KEYS.IS_LOGGED_IN, false);
-                        startActivity(new Intent(VerifyActivity.this, RegisterActivity.class));
-
-                    }
-                }
-
-                if (dataSnapshot.getChildrenCount() == 0) {
-                    Log.d(TAG, "Database Not Exist. ");
+                } else {
+                    Dialog.dismiss();
+                    Log.d(TAG, "Not Exist. ");
                     Tools.savePrefBoolean(KEYS.IS_LOGGED_IN, false);
                     startActivity(new Intent(VerifyActivity.this, RegisterActivity.class));
                 }

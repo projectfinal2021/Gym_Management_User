@@ -138,7 +138,7 @@ public class RegisterActivity extends AppCompatActivity {
 
 
         if (full_name.isEmpty() || user_email.isEmpty() || user_address.isEmpty() || user_birthDate.isEmpty()
-                || user_gender.equals("Select one")  || user_phoneNumber.isEmpty()) {
+                || user_gender.equals("Gender")  || user_phoneNumber.isEmpty()) {
             Log.d(TAG, "userRegistrationValidation: false");
             return false;
         } else {
