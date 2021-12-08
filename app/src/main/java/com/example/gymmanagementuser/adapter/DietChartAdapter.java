@@ -46,13 +46,13 @@ public class DietChartAdapter extends RecyclerView.Adapter<DietChartAdapter.Diet
 
 
     public class DietChartViewHolder extends RecyclerView.ViewHolder {
-        private TextView dietChartName, dietChartTime,bodyTypes;
+        private TextView dietChartName, dietChartTime, bodyTypes;
 
         public DietChartViewHolder(@NonNull View itemView) {
             super(itemView);
             dietChartName = itemView.findViewById(R.id.textview_dietChartLayout_dietChart);
             dietChartTime = itemView.findViewById(R.id.textview_dietChartLayout_time);
-            bodyTypes=itemView.findViewById(R.id.textview_exerciseLayout_bodyTypes);
+            bodyTypes = itemView.findViewById(R.id.textview_exerciseLayout_bodyTypes);
         }
     }
 }

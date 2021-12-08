@@ -1,5 +1,6 @@
 package com.example.gymmanagementuser.fragment;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -13,6 +14,7 @@ import com.example.gymmanagementuser.R;
 import com.example.gymmanagementuser.Tools;
 import com.example.gymmanagementuser.databinding.FragmentDietChartBinding;
 import com.example.gymmanagementuser.databinding.FragmentRoutineBinding;
+import com.example.gymmanagementuser.ui.ExerciseRoutineActivity;
 
 public class RoutineFragment extends Fragment {
     private static final String TAG = "RoutineFragment";
@@ -29,6 +31,31 @@ public class RoutineFragment extends Fragment {
         View view = fragmentRoutineBinding.getRoot();
 
         fragmentRoutineBinding.textviewRoutineFragHeader.setText("Routine: " + Tools.getPref(KEYS.BODY_TYPE, null));
+        Intent intent = new Intent(getActivity(), ExerciseRoutineActivity.class);
+
+        fragmentRoutineBinding.buttonRoutineFrag3days.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Tools.savePref(KEYS.TOTAL_EXERCISE_DAYS,"3 Days");
+                startActivity(intent);
+            }
+        });
+
+        fragmentRoutineBinding.buttonRoutineFrag5days.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Tools.savePref(KEYS.TOTAL_EXERCISE_DAYS,"5 Days");
+                startActivity(intent);
+            }
+        });
+
+        fragmentRoutineBinding.buttonRoutineFrag6days.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Tools.savePref(KEYS.TOTAL_EXERCISE_DAYS,"7 Days");
+                startActivity(intent);
+            }
+        });
 
         return view;
     }

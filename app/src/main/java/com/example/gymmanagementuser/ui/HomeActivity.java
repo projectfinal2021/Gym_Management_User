@@ -59,6 +59,7 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
 
     }
 
+
     private void getHeaderInformation(String phone_no) {
 
         databaseReference.child(phone_no).addListenerForSingleValueEvent(new ValueEventListener() {

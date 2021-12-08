@@ -8,4 +8,5 @@ public class KEYS {
     public static final String FULL_NAME="full_name";
     public static final String IMAGE_URI="image_uri";
     public static final String IsDartMode = "IS_DART_MODE";
+    public static final String TOTAL_EXERCISE_DAYS = "IS_DART_MODE";
 }
